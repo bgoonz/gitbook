@@ -6,3 +6,5 @@ root: ./
     
 redirects:  
     previous/page: new-folder/page.md
+redirects:  
+    help/contact: ./contact.md
