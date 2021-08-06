@@ -1,269 +1,508 @@
-# Home
+# index
 
-You should probably skip this one… seriously it’s just for internal use!
+Data Structures Reference
 
-## All Of My Medium Stories
+## Data Structures… Under The Hood
 
-![](https://cdn-images-1.medium.com/max/800/1*yZ41P3YdMYMiyFPAPrzyGw.gif)[**T**](https://bryanguner.medium.com/prerequisites-to-writing-express-apis-75e3267b284a)
+## Data Structures Reference
 
+## Array
 
+Stores things in order. Has quick lookups by index.
 
-[**he ExpressJS Way To Write APIs**  
- _This article will cover the basics of express from the perspective of a beginner without concerning it’s self with the…_bryanguner.medium.com](https://bryanguner.medium.com/prerequisites-to-writing-express-apis-75e3267b284a)
+## Linked List
 
-[**Heroku Deploy Guides** **&** **Cheatsheet Compilation**  
- _Heroku lets you deploy, run and manage applications written in Ruby, Node.js, Java, Python, Clojure, Scala, Go and PHP…_bryanguner.medium.com](https://bryanguner.medium.com/heroku-deploy-guides-cheatsheet-compilation-b2897b69ce02)
+Also stores things in order. Faster insertions and deletions than  
+arrays, but slower lookups \(you have to “walk down” the whole list\).
 
-[**A Comprehensive Deep Dive into React**  
- _An in-depth look into the world of React._javascript.plainenglish.io](https://javascript.plainenglish.io/react-in-depth-1965dcde8d4f)
+!
 
-[**Web Development Resource List \#4**  
- _Update:_bryanguner.medium.com](https://bryanguner.medium.com/take-a-look-at-the-big-picture-b69e0999a380)
+## Queue
 
-[**BASH CHEAT SHEET**  
- _My Bash Cheatsheet Index:_bryanguner.medium.com](https://bryanguner.medium.com/bash-d3077114aea7)
+Like the line outside a busy restaurant. “First come, first served.”
 
-[**Heroku Cheat Sheet**  
- _a cheatsheet for using heroku-cli_bryanguner.medium.com](https://bryanguner.medium.com/heroku-cheat-sheet-6107ce6ba52b)
+## Stack
 
-[**Web Developer’s Technical Glossary**  
- _This will be a running list as I make updates!_bryanguner.medium.com](https://bryanguner.medium.com/web-developers-technical-glossary-2066beae5e96)
+Like a stack of dirty plates in the sink. The first one you take off the  
+top is the last one you put down.
 
-[**PostgreSQL In 43 Commands Or Less**  
- _In database jargon, PostgreSQL uses a client/server model. A PostgreSQL session consists of the following cooperating…_medium.com](https://medium.com/codex/postgresql-in-43-commands-or-less-19fba3e37110)
+## Tree
 
-[**Why Jamstack Rocks🤘😎🤙**  
- _JAMstack websites don’t use the microservices architecture, but they go for the micro frontends architecture. Each…_medium.com](https://medium.com/geekculture/why-jamstack-rocks-666114722f35)
+Good for storing hierarchies. Each node can have “child” nodes.
 
-[**What Are Bash Aliases And Why Should You Be Using Them!**  
- _A Bash alias is a method of supplementing or overriding Bash commands with new ones. Bash aliases make it easy for…_bryanguner.medium.com](https://bryanguner.medium.com/what-are-bash-aliases-and-why-should-you-be-using-them-30a6cfafdfeb)
+## Binary Search Tree
 
-[**Life Saving Bash Scripts Part 2**  
- _I am not saying they’re in any way special compared with other bash scripts…_ _but when I consider that you can never…_medium.com](https://medium.com/geekculture/life-saving-bash-scripts-part-2-b40c8ee22682)
+Everything in the left subtree is smaller than the current node,  
+everything in the right subtree is larger. lookups, but only if the tree  
+is balanced!
 
-[**Job Boards and The Hunt**  
- _I can’t imagine the kind of masochism it would take to enjoy the act of posting and daily maintenance on a job…_medium.com](https://medium.com/analytics-vidhya/job-boards-and-the-hunt-8cbfefefbb33)
+## Binary Search Tree
 
-[**Absolutely Everything You Could Need To Know About How JavaScript Works.**  
- _Seriously…_ _this list is utterly exhaustive it covers more core concepts than I can hold the names of in working memory…_bryanguner.medium.com](https://bryanguner.medium.com/absolutely-everything-you-could-need-to-know-about-how-javascript-works-633549469528)
+## Graph
 
-[**Basic React Tutorial**  
- _Random Things to Remember_bryanguner.medium.com](https://bryanguner.medium.com/react-tutorial-from-basics-647ba595e607)
+Good for storing networks, geography, social relationships, etc.
 
-[**Fundamental Concepts In React That Will Probably Come Up On An Interview**  
- _Incomplete Article_bryanguner.medium.com](https://bryanguner.medium.com/fundamental-concepts-in-react-that-will-probably-come-up-on-an-interview-5495b6421287)
+## Heap
 
-[**The Penultimate Web Developer’s Cheat Sheet**  
- _I am literally just going to combine a fair number of my Cheat Sheets in no particular order._medium.com](https://medium.com/geekculture/the-penultimate-web-developers-cheat-sheet-a02a423139a4)
+A binary tree where the smallest value is always at the top. Use it to implement a priority queue.
 
-[**Bash Commands That Save Me Time and Frustration**  
- _Here’s a list of bash commands that stand between me and insanity._medium.com](https://medium.com/geekculture/bash-commands-that-save-time-920fb6ab9d0a)
+!\[A binary heap is a binary tree where the nodes are organized to so that the smallest value is always at the top.\]
 
-[**Quick Web Developers Website Checklist** **&** **A List Of Tools For Improvement**  
- _A set of questions you should use before handing off your application to the client._bryanguner.medium.com](https://bryanguner.medium.com/quick-web-developers-website-checklist-a-list-of-tools-for-improvement-9a52e11c8ee1)
+## Adjacency list
 
-[**10 Essential React Interview Questions For Aspiring Frontend Developers**  
- _Comprehensive React Cheatsheet included at the bottom of this article!_javascript.plainenglish.io](https://javascript.plainenglish.io/react-md-cbaafb31765d)
+A list where the index represents the node and the value at that index is a list of the node’s neighbors:
 
-[**Long List Of Invaluable NodeJS Resources**  
- _Disclaimer: I know that I did not create this list all on my own…_ _I can’t recall or track down the original list if you…_levelup.gitconnected.com](https://levelup.gitconnected.com/long-list-of-invaluable-nodejs-resources-6a793ae1ce6)
+graph = \[ \[1\], \[0, 2, 3\], \[1, 3\], \[1, 2\], \]
 
-[**Open Ended Frontend Interview Questions You Should Answer Before Your Next Interview**  
- _Explain event delegation._bryanguner.medium.com](https://bryanguner.medium.com/open-ended-frontend-interview-questions-you-should-answer-before-your-next-interview-7c9722712521)
+Since node 3 has edges to nodes 1 and 2, graph\[3\] has the adjacency list \[1, 2\].
 
-[**Data Structures…** **Under The Hood**  
- _Data Structures Reference_bryanguner.medium.com](https://bryanguner.medium.com/data-structures-under-the-hood-660256c2e4e3)
+We could also use [a dictionary](https://www.interviewcake.com/concept/hash-map) where the keys represent the node and the values are the lists of neighbors.
 
-[**Web Development Interview Resource List**  
- _Most good programmers do programming not because they expect to get paid or get adulation by the public, but because it…_medium.com](https://medium.com/geekculture/web-development-interview-resource-list-88fce9876261)
+graph = { 0: \[1\], 1: \[0, 2, 3\], 2: \[1, 3\], 3: \[1, 2\], }
 
-[**Beginners Guide To Python**  
- _My favorite language for maintainability is Python. It has simple, clean syntax, object encapsulation, good library…_medium.com](https://medium.com/geekculture/beginners-guide-to-python-e5a59b5bb64d)
+This would be useful if the nodes were represented by strings, objects, or otherwise didn’t map cleanly to list indices.
 
-[**Data Structures** **&** **Algorithms Resource List Part 1**  
- _Guess the author of the following quotes:_bryanguner.medium.com](https://bryanguner.medium.com/data-structures-algorithms-resource-list-part-1-8bad647a8ad8)
+## Adjacency matrix
 
-[**What is Memoization?**  
- _And why this programming paradigm shouldn’t make you cringe._javascript.plainenglish.io](https://javascript.plainenglish.io/memoization-86685d811182)
+A matrix of 0s and 1s indicating whether node x connects to node y \(0 means no, 1 means yes\).
 
-[**CSS Interview Prep Quiz**  
- _Plus Css Cheat Sheet \(82 questions total\)_bryanguner.medium.com](https://bryanguner.medium.com/css-interview-prep-quiz-6e3e4de7ca53)
+graph = \[ \[0, 1, 0, 0\], \[1, 0, 1, 1\], \[0, 1, 0, 1\], \[0, 1, 1, 0\], \]
 
-[**Graph Data Structure Interview Questions At A Glance**  
- _Because they’re just about the most important data structure there is._medium.com](https://medium.com/geekculture/verbal-technical-interview-questions-about-graph-data-structures-fc6b1afbd8be)
+Since node 3 has edges to nodes 1 and 2, graph\[3\]\[1\] and graph\[3\]\[2\] have value 1.
 
-[**Object Methods**  
- _Iterating Through Objects_medium.com](https://medium.com/geekculture/object-methods-4066ed24b214)
+a = LinkedListNode\(5\) b = LinkedListNode\(1\) c = LinkedListNode\(9\) a.next = b b.next = c
 
-[**Github Repositories That Will Teach You How To Code For Free!**  
- _30-seconds/30-seconds-of-code_levelup.gitconnected.com](https://levelup.gitconnected.com/github-repositories-that-will-teach-you-how-to-code-for-free-ad0ecf59d89e)
+## Arrays
 
-[**Resources By Programming Language**  
- _Here’s a list of programming resources sorted by programming language._bryanguner.medium.com](https://bryanguner.medium.com/resources-by-programming-language-399d9f9ef520)
+Ok, so we know how to store individual numbers. Let’s talk about storing _several numbers_.
 
-[**Breaking Down Scope, Context, And Closure In JavaScript In Simple Terms.**  
- _“JavaScript’s global scope is like a public toilet. You can’t avoid going in there, but try to limit your contact with…_medium.com](https://medium.com/codex/scope-closures-context-in-javascript-f126f1523104)
+That’s right, things are starting to _heat up_.
 
-[**These Are A Few Of My Favorite Things**  
- _A web development student’s declassified school survival guide._medium.com](https://medium.com/codex/these-are-a-few-of-my-favorite-things-82e8b6e61879)
+Suppose we wanted to keep a count of how many bottles of kombucha we drink every day.
 
-[**Objects In JavaScript**  
- _The object is a data structure that stores other data, similar to how an array stores elements._medium.com](https://medium.com/codex/objects-in-javascript-b212486dade6)
+Let’s store each day’s kombucha count in an 8-bit, fixed-width, unsigned integer. That should be plenty — we’re not likely to get through more than 256 \(2⁸\) bottles in a _single day_, right?
 
-[**Fundamental Javascript Concepts You Should Understand**  
- _Plain Old JS Object Lesson Concepts_bryanguner.medium.com](https://bryanguner.medium.com/fundamental-javascript-concepts-you-should-understand-81c4d839b827)
+And let’s store the kombucha counts right next to each other in RAM, starting at memory address 0:
 
-[**Mutability And Reference VS Privative Types in JavaScript**  
- _Mutability_ _&&_ _Primitive_ _&&_ _Reference Examples_bryanguner.medium.com](https://bryanguner.medium.com/mutability-and-reference-vs-privative-types-in-javascript-5294422db4b0)
+![](https://cdn-images-1.medium.com/max/800/0*FM_W-EkXYGYwG6LK)Bam. That’s an **array**. RAM is _basically_ an array already.
 
-[**Array Callback Methods Implemented With For Loops**  
- _How to implement array callback methods in JavaScript_javascript.plainenglish.io](https://javascript.plainenglish.io/array-callback-methods-implemented-with-for-loops-d08875df6777)
+Just like with RAM, the elements of an array are numbered. We call that number the **index** of the array element \(plural: indices\). In _this_ example, each array element’s index is the same as its address in RAM.
 
-[**Beginner’s Guide To React Part 2**  
- _As I learn to build web applications in React I will blog about it in this series in an attempt to capture the…_bryanguner.medium.com](https://bryanguner.medium.com/introductory-react-part-2-cda01615a186)
+But that’s not usually true. Suppose another program like Spotify had already stored some information at memory address 2:
 
-[**A Very Quick Guide To Calculating Big O Computational Complexity**  
- _Big O: big picture, broad strokes, not details_bryanguner.medium.com](https://bryanguner.medium.com/a-very-quick-guide-to-calculating-big-o-computational-complexity-eb1557e85fa3)
+![](https://cdn-images-1.medium.com/max/800/0*IBpMv-88FpWo2gbu)We’d have to start our array below it, for example at memory address 3. So index 0 in our array would be at memory address 3, and index 1 would be at memory address 4, etc.:
 
-[**Introduction to React for Complete Beginners**  
- _All of the code examples below will be included a second time at the bottom of this article as an embedded gist._javascript.plainenglish.io](https://javascript.plainenglish.io/introduction-to-react-for-complete-beginners-8021738aa1ad)
+![](https://cdn-images-1.medium.com/max/800/0*Zeqpub-zKSWyyBeg)Suppose we wanted to get the kombucha count at index 4 in our array. How do we figure out what _address in memory_ to go to? Simple math:
 
-[**Scheduling: setTimeout and setInterval**  
- _We may decide to execute a function not right now, but at a later time. That’s called_ _“scheduling a call”._javascript.plainenglish.io](https://javascript.plainenglish.io/scheduling-settimeout-and-setinterval-fcb2f40d16f7)
+Take the array’s starting address \(3\), add the index we’re looking for \(4\), and that’s the address of the item we’re looking for. 3 + 4 = 7. In general, for getting the nth item in our array:
 
-[**LocalStorage VS SessionStorage**  
- _Web storage objects localStorage and sessionStorage allow to save key/value pairs in the browser._bryanguner.medium.com](https://bryanguner.medium.com/css-animations-d196a20099a5)
+\text{address of nth item in array} = \text{address of array start} + n
 
-[**These Are The Bash Shell Commands That Stand Between Me And Insanity**  
- _I will not profess to be a bash shell wizard…_ _but I have managed to scour some pretty helpful little scripts from Stack…_levelup.gitconnected.com](https://levelup.gitconnected.com/these-are-the-bash-shell-commands-that-stand-between-me-and-insanity-984865ba5d1b)
+This works out nicely because the size of the addressed memory slots and the size of each kombucha count are _both_ 1 byte. So a slot in our array corresponds to a slot in RAM.
 
-[**How To Implement Native\(ES6\) Data Structures Using Arrays** **&** **Objects**  
- _Smart data structures and dumb code works better than the other way around -“Eric S. Raymond”_bryanguner.medium.com](https://bryanguner.medium.com/how-to-implement-native-es6-data-structures-using-arrays-objects-ce953b9f6a07)
+But that’s not always the case. In fact, it’s _usually not_ the case. We _usually_ use _64-bit_ integers.
 
-[**Objects in Javascript**  
- _Codepen with examples for you to practice with below!_medium.com](https://medium.com/codex/objects-in-javascript-cc578a781e1d)
+So how do we build an array of _64-bit_ \(8 byte\) integers on top of our _8-bit_ \(1 byte\) memory slots?
 
-[**The Beginner’s Guide To JavaScript**  
- _Part 1_javascript.plainenglish.io](https://javascript.plainenglish.io/absolute-beginners-guide-to-javascript-part-1-e222d166b6e1)
+We simply give each array index _8_ address slots instead of 1:
 
-[**Web Developer Resource List Part 4**  
- _A all encompassing list of tools and resources for web developers_medium.com](https://medium.com/star-gazers/web-developer-resource-list-part-4-fd686892b9eb)
+![](https://cdn-images-1.medium.com/max/800/0*Y_mxvkxQGPP7rqQJ)So we can still use simple math to grab the start of the nth item in our array — just gotta throw in some multiplication:
 
-[**VSCode Extensions Specifically for JavaScript Development**  
- _VSCode Extensions that are indispensable in JavaScript development_medium.com](https://medium.com/codex/vscode-extensions-specifically-for-javascript-development-ea91305cbd4a)
+\text{address of nth item in array} = \text{address of array start} + \(n \* \text{size of each item in bytes}\)
 
-[**A list of all of my articles to link to future posts**  
- _You should probably skip this one…_ _seriously it’s just for internal use!_bryanguner.medium.com](https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b)
+Don’t worry — adding this multiplication doesn’t really slow us down. Remember: addition, subtraction, multiplication, and division of fixed-width integers takes time. So _all_ the math we’re using here to get the address of the nth item in the array takes time.
 
-[**Fundamental Data Structures in JavaScript**  
- _A simple to follow guide to Lists Stacks and Queues, with animated gifs, diagrams, and code examples!_javascript.plainenglish.io](https://javascript.plainenglish.io/lists-stacks-and-queues-in-javascript-88466fae0fbb)
+And remember how we said the memory controller has a _direct connection_ to each slot in RAM? That means we can read the stuff at any given memory address in time.
 
-[**Web Development Resources Part 3**  
- _I’m the psychological equivalent of a physical hoarder only instead of empty soda cans and dead racoons it’s lists of…_bryanguner.medium.com](https://bryanguner.medium.com/web-development-resources-part-3-f862ceb2b82a)
+![](https://cdn-images-1.medium.com/max/800/0*kqv_M8aCHZWjRv90)**Together, this means looking up the contents of a given array index is time.** This fast lookup capability is the most important property of arrays.
 
-[**Web Development Interview Part 3💻**  
- _This installment is going to be the least technically demanding thus far however these questions are a more realistic…_medium.com](https://medium.com/codex/web-development-interview-part-3-826ae81a9107)
+But the formula we used to get the address of the nth item in our array only works _if_:
 
-[**The Best Cloud-Based Code Playgrounds of 2021 \(Part 1\)**  
- _A plethora of front-end code playgrounds have appeared over the years. They offer a convenient way to experiment with…_bryanguner.medium.com](https://bryanguner.medium.com/the-best-cloud-based-code-playgrounds-of-2021-part-1-cdae9448db24)
+1. **Each item in the array is the** _**same size**_ \(takes up the same
 
-[**Front End Interview Questions Part 2**  
- _These will focus more on vocabulary and concepts than the application driven approach in my last post!_medium.com](https://medium.com/codex/front-end-interview-questions-part-2-86ddc0e91443)
+number of bytes\).
 
-[**Web Developer Resource List Part 2**  
- _Because I compile these things compulsively anyway…_medium.com](https://medium.com/star-gazers/web-developer-resource-list-part-2-9c5cb56ab263)
+1. **The array is** _**uninterrupted**_ **\(contiguous\) in memory**. There can’t
 
-[**HTTP Basics**  
- _“If you want to build a ship, don’t drum up the men and women to gather wood, divide the work, and give orders…_levelup.gitconnected.com](https://levelup.gitconnected.com/http-basics-8f02a96a834a)
+be any gaps in the array…like to “skip over” a memory slot Spotify was already using.
 
-[**JavaScript Frameworks** **&** **Libraries**  
- _My Awesome JavaScript List Part 2_javascript.plainenglish.io](https://javascript.plainenglish.io/javascript-frameworks-libraries-35931e187a35)
+These things make our formula for finding the nth item _work_ because they make our array _predictable_. We can _predict_ exactly where in memory the nth element of our array will be.
 
-[**My** **‘awesome’** **list of JavaScript resources**  
- _Everyone’s seen the_ _‘Awesome’_ _lists on GitHub…_ _and they are indeed awesome…_ _so today I am going to attempt to curate my…_javascript.plainenglish.io](https://javascript.plainenglish.io/my-take-on-awesome-javascript-243255451e74)
+But they also constrain what kinds of things we can put in an array. Every item has to be the same size. And if our array is going to store a _lot_ of stuff, we’ll need a _bunch_ of uninterrupted free space in RAM. Which gets hard when most of our RAM is already occupied by other programs \(like Spotify\).
 
-[**Everything You Need to Get Started With VSCode + Extensions** **&** **Resources**  
- _Commands:_levelup.gitconnected.com](https://levelup.gitconnected.com/everything-you-need-to-get-started-with-vscode-extensions-resources-b9f4c8d91931)
+That’s the tradeoff. Arrays have fast lookups \( time\), but each item in the array needs to be the same size, and you need a big block of uninterrupted free memory to store the array.
 
-[**My Favorite VSCode** _**Themes**_  
- Themeslevelup.gitconnected.com](https://levelup.gitconnected.com/my-favorite-vscode-themes-9bab65af3f0f)
+\#\# Pointers
 
-[**Object Oriented Programming in JavaScript**  
- _Object-Oriented Programming_levelup.gitconnected.com](https://levelup.gitconnected.com/object-oriented-programming-in-javascript-d45007d06333)
+Remember how we said every item in an array had to be the same size? Let’s dig into that a little more.
 
-[**JavaScript Rotate \(Array\) ProblemWalkthrough**  
- _Explanation for Rotate Right_medium.com](https://medium.com/codex/javascript-rotate-array-problemwalkthrough-31deb19ebba1)
+Suppose we wanted to store a bunch of ideas for baby names. Because we’ve got some _really_ cute ones.
 
-[**Super Simple Intro To HTML**  
- _What is HTML, CSS_ _&_ _JS and why do we need all three?_levelup.gitconnected.com](https://levelup.gitconnected.com/super-simple-intro-to-html-651d695f9bc)
+Each name is a string. Which is really an array. And now we want to store _those arrays_ in an array. _Whoa_.
 
-[**Everything You Need To Know About Relational Databases, SQL, PostgreSQL and Sequelize To Build…**  
- _For Front end developers who like myself struggle with making the jump to fullstack._medium.com](https://medium.com/codex/everything-you-need-to-know-about-relational-databases-sql-postgresql-and-sequelize-to-build-8acb68284a98)
+Now, what if our baby names have different lengths? That’d violate our rule that all the items in an array need to be the same size!
 
-[**Understanding Git \(A Beginners Guide Containing Cheat Sheets** **&** **Resources\)**  
- _Basic Git Work Flow._levelup.gitconnected.com](https://levelup.gitconnected.com/understanding-git-a-beginners-guide-containing-cheat-sheets-resources-b50c9c01a107)
+We could put our baby names in arbitrarily large arrays \(say, 13 characters each\), and just use a special character to mark the end of the string within each array…
 
-[**The Complete JavaScript Reference Guide**  
- _You will want to bookmark this_javascript.plainenglish.io](https://javascript.plainenglish.io/complete-javascript-reference-guide-64306cd6b0db)
+![](https://cdn-images-1.medium.com/max/800/0*DanfoIJ9nNaOKn-G)“Wigglesworth” is a cute baby name, right?
 
-[**Modules in Javascript**  
- _Differences between Node.js and browsers_medium.com](https://medium.com/geekculture/modules-in-javascript-a55333e35978)
+But look at all that wasted space after “Bill”. And what if we wanted to store a string that was _more_ than 13 characters? We’d be out of luck.
 
-[**An Introduction to Markdown \(Bonus Markdown Templates Included\)**  
- _Basic Syntax Guide_levelup.gitconnected.com](https://levelup.gitconnected.com/an-introduction-to-markdown-bonus-markdown-templates-included-3497ce56de3)
+There’s a better way. Instead of storing the strings right inside our array, let’s just put the strings wherever we can fit them in memory. Then we’ll have each element in our array hold the _address in memory_ of its corresponding string. Each address is an integer, so really our outer array is just an array of integers. We can call each of these integers a **pointer**, since it points to another spot in memory.
 
-[**Web Dev Resources**  
- _Web Development_levelup.gitconnected.com](https://levelup.gitconnected.com/web-dev-resources-ec1975773d7d)
+![](https://cdn-images-1.medium.com/max/800/0*aLJ4pDr4uAXU1_Qs)The pointers are marked with a \* at the beginning.
 
-[**Regular Expressions**  
- _description:_medium.com](https://medium.com/codex/regular-expressions-4d8fb3eb146b)
+Pretty clever, right? This fixes _both_ the disadvantages of arrays:
 
-[**Writing Files Using Python**  
- _Basics of Writing Files in Python_  
- _The common methods to operate with files are open\(\) to open a file,_medium.com](https://medium.com/geekculture/writing-files-using-python-d46b4851366f)
+1. The items don’t have to be the same length — each string can be as
 
-[**A Collection of my most useful Gist Entries**  
- _This list is in no particular order!_bryanguner.medium.com](https://bryanguner.medium.com/a-collection-of-my-most-useful-gist-entries-f4314f3ba3ab)
+long or as short as we want.
 
-[**Learn CSS So That Your Site Doesn’t Look Like Garbage**  
- _CSS Selectors_javascript.plainenglish.io](https://javascript.plainenglish.io/learn-css-so-that-your-site-doesnt-look-like-garbage-938871b4521a)
+1. We don’t need enough uninterrupted free memory to store all our
 
-[**PostgreSQL Setup For Windows** **&** **WSL/Ubuntu**  
- _If you follow this guide to a tee…_ _you will install PostgreSQL itself on your Windows installation. Then, you will…_bryanguner.medium.com](https://bryanguner.medium.com/postgresql-setup-for-windows-wsl-ubuntu-801672ab7089)
+strings next to each other — we can place each of them separately, wherever there’s space in RAM.
 
-[**Emmet Cheat Sheet**  
- _EMMET_bryanguner.medium.com](https://bryanguner.medium.com/emmet-cheat-sheet-24758e628d37)
+We fixed it! No more tradeoffs. Right?
 
-[**Git-Tricks**  
- _Refs_bryanguner.medium.com](https://bryanguner.medium.com/git-tricks-57e8d0292285)
+Nope. Now we have a _new_ tradeoff:
 
-[**Python Study Guide for a JavaScript Programmer**  
- _A guide to commands in Python from what you know in JavaScript_levelup.gitconnected.com](https://levelup.gitconnected.com/python-study-guide-for-a-native-javascript-developer-5cfdf3d2bdfb)
+Remember how the memory controller sends the contents of _nearby_ memory addresses to the processor with each read? And the processor caches them? So reading sequential addresses in RAM is _faster_ because we can get most of those reads right from the cache?
 
-[_**Fetch**_ **Quick Sheet**  
- Fetchbryanguner.medium.com](https://bryanguner.medium.com/fetch-quick-sheet-8872650742b4)
+![](https://cdn-images-1.medium.com/max/800/0*UkWe4Y0h8O7mz0E_)Our original array was very **cache-friendly**, because everything was sequential. So reading from the 0th index, then the 1st index, then the 2nd, etc. got an extra speedup from the processor cache.
 
-[**Express Quick Sheet**  
- _Settings_bryanguner.medium.com](https://bryanguner.medium.com/express-quick-sheet-8f93762c59ca)
+**But the pointers in this array make it** _**not**_ **cache-friendly**, because the baby names are scattered randomly around RAM. So reading from the 0th index, then the 1st index, etc. doesn’t get that extra speedup from the cache.
 
-[**Fundamental Data Structures In JavaScript**  
- _Data structures in JavaScript_medium.com](https://medium.com/codex/fundamental-data-structures-in-javascript-8f9f709c15b4)
+That’s the tradeoff. This pointer-based array requires less uninterrupted memory and can accommodate elements that aren’t all the same size, _but_ it’s _slower_ because it’s not cache-friendly.
 
-[**Deploy React App To Heroku Using Postgres** **&** **Express**  
- _Heroku is an web application that makes deploying applications easy for a beginner._bryanguner.medium.com](https://bryanguner.medium.com/deploy-react-app-to-heroku-using-postgres-express-70b7ea807986)
+This slowdown isn’t reflected in the big O time cost. Lookups in this pointer-based array are _still_ time.
 
-[**Postgresql Cheat Sheet**  
- _PostgreSQL commands_medium.com](https://medium.com/codex/postgresql-cheat-sheet-718b813d3e31)
+## Linked lists
 
-[**A Quick Guide to Big-O Notation, Memoization, Tabulation, and Sorting Algorithms by Example**  
- _Curating Complexity: A Guide to Big-O Notation_medium.com](https://medium.com/star-gazers/a-quick-guide-to-big-o-notation-memoization-tabulation-and-sorting-algorithms-by-example-803ff193c522)
+Our word processor is definitely going to need fast appends — appending to the document is like the _main thing_ you do with a word processor.
 
-[**Basic Web Development Environment Setup**  
- _Windows Subsystem for Linux \(WSL\) and Ubuntu_levelup.gitconnected.com](https://levelup.gitconnected.com/basic-web-development-environment-setup-9f36c3f15afe)
+Can we build a data structure that can store a string, has fast appends, _and_ doesn’t require you to say how long the string will be ahead of time?
 
-By [Bryan Guner](https://medium.com/@bryanguner) on [March 22, 2021](https://medium.com/p/1f6f88ebdf5b).
+Let’s focus first on not having to know the length of our string ahead of time. Remember how we used _pointers_ to get around length issues with our array of baby names?
 
-[Canonical link](https://medium.com/@bryanguner/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b)
+What if we pushed that idea even further?
+
+What if each _character_ in our string were a _two-index array_ with:
+
+1. the character itself 2. a pointer to the next character
+
+![](https://cdn-images-1.medium.com/max/800/0*KcG72KzdYU-ftXWq)We would call each of these two-item arrays a **node** and we’d call this series of nodes a **linked list**.
+
+Here’s how we’d actually implement it in memory:
+
+![](https://cdn-images-1.medium.com/max/800/0*0KZl9hNN_IFP15RH)Notice how we’re free to store our nodes wherever we can find two open slots in memory. They don’t have to be next to each other. They don’t even have to be _in order_:
+
+![](https://cdn-images-1.medium.com/max/800/0*lSOAxFuMAS2xK3JI)“But that’s not cache-friendly, “ you may be thinking. Good point! We’ll get to that.
+
+The first node of a linked list is called the **head**, and the last node is usually called the **tail**.
+
+Confusingly, some people prefer to use “tail” to refer to _everything after the head_ of a linked list. In an interview it’s fine to use either definition. Briefly say which definition you’re using, just to be clear.
+
+It’s important to have a pointer variable referencing the head of the list — otherwise we’d be unable to find our way back to the start of the list!
+
+We’ll also sometimes keep a pointer to the tail. That comes in handy when we want to add something new to the end of the linked list. In fact, let’s try that out:
+
+Suppose we had the string “LOG” stored in a linked list:
+
+![](https://cdn-images-1.medium.com/max/800/0*c3-7UhJ39PZohsuz)Suppose we wanted to add an “S” to the end, to make it “LOGS”. How would we do that?
+
+Easy. We just put it in a new node:
+
+![](https://cdn-images-1.medium.com/max/800/0*U1OJCEX8zUd5QbuU)And tweak some pointers:
+
+​1. Grab the last letter, which is “G”. Our tail pointer lets us do this in time.
+
+![](https://cdn-images-1.medium.com/max/800/0*YzvjIGZQ6MnkGWcw)​2. Point the last letter’s next to the letter we’re appending \(“S”\).
+
+![](https://cdn-images-1.medium.com/max/800/0*-CA8KHc1tdRfVYoe)​3. Update the tail pointer to point to our _new_ last letter, “S”.
+
+![](https://cdn-images-1.medium.com/max/800/0*Gbf918HOvlJhMHEf)That’s time.
+
+Why is it time? Because the runtime doesn’t get bigger if the string gets bigger. No matter how many characters are in our string, we still just have to tweak a couple pointers for any append.
+
+Now, what if instead of a linked list, our string had been a _dynamic array_? We might not have any room at the end, forcing us to do one of those doubling operations to make space:
+
+![](https://cdn-images-1.medium.com/max/800/0*wSK-FGV0kCiskLNS)So with a dynamic array, our append would have a _worst-case_ time cost of .
+
+**Linked lists have worst-case -time appends, which is better than the worst-case time of dynamic arrays.**
+
+That _worst-case_ part is important. The _average case_ runtime for appends to linked lists and dynamic arrays is the same: .
+
+Now, what if we wanted to \*pre\*pend something to our string? Let’s say we wanted to put a “B” at the beginning.
+
+For our linked list, it’s just as easy as appending. Create the node:
+
+![](https://cdn-images-1.medium.com/max/800/0*MSenMuHQuHb1dV1X)And tweak some pointers:
+
+1. Point “B”’s next to “L”. 2. Point the head to “B”.
+
+![](https://cdn-images-1.medium.com/max/800/0*GoeByRt15C4nQvQr)Bam. time again.
+
+But if our string were a _dynamic array_…
+
+![](https://cdn-images-1.medium.com/max/800/0*PhElGwum7RgTPqAy)And we wanted to add in that “B”:
+
+![](https://cdn-images-1.medium.com/max/800/0*n4qjPFNz4BVHBt5w)Eep. We have to _make room_ for the “B”!
+
+We have to move _each character_ one space down:
+
+![](https://cdn-images-1.medium.com/max/800/0*n90vZS_Exw8Wjs2b)![](https://cdn-images-1.medium.com/max/800/0*zryPfLJtzXqnGOth)![](https://cdn-images-1.medium.com/max/800/0*PlEqTgXBKKpG5DCF)![](https://cdn-images-1.medium.com/max/800/0*DampgIgyO6Silk8U)_Now_ we can drop the “B” in there:
+
+![](https://cdn-images-1.medium.com/max/800/0*Xxkr4sYP9-drZeEe)What’s our time cost here?
+
+It’s all in the step where we made room for the first letter. We had to move _all n_ characters in our string. One at a time. That’s time.
+
+**So linked lists have faster \*pre\*pends \( time\) than dynamic arrays \( time\).**
+
+No “worst case” caveat this time — prepends for dynamic arrays are _always_ time. And prepends for linked lists are _always_ time.
+
+These quick appends and prepends for linked lists come from the fact that linked list nodes can go anywhere in memory. They don’t have to sit right next to each other the way items in an array do.
+
+So if linked lists are so great, why do we usually store strings in an array? **Because** [**arrays have -time lookups**](https://dev.to/bgoonz/common-data-structures-their-background-11eg#constant-time-array-lookups)**.** And those constant-time lookups _come from_ the fact that all the array elements are lined up next to each other in memory.
+
+Lookups with a linked list are more of a process, because we have no way of knowing where the ith node is in memory. So we have to walk through the linked list node by node, counting as we go, until we hit the ith item.
+
+def get\_ith\_item\_in\_linked\_list\(head, i\): if i &lt; 0: raise ValueError\(“i can’t be negative: %d” % i\) current\_node = head current\_position = 0 while current\_node: if current\_position == i: \# Found it! return current\_node \# Move on to the next node current\_node = current\_node.next current\_position += 1 raise ValueError\(‘List has fewer than i + 1 \(%d\) nodes’ % \(i + 1\)\)
+
+That’s i + 1 steps down our linked list to get to the ith node \(we made our function zero-based to match indices in arrays\). **So linked lists have -time lookups.** Much slower than the -time lookups for arrays and dynamic arrays.
+
+Not only that — **walking down a linked list is** _**not**_ **cache-friendly.** Because the next node could be _anywhere_ in memory, we don’t get any benefit from the processor cache. This means lookups in a linked list are even slower.
+
+So the tradeoff with linked lists is they have faster prepends and faster appends than dynamic arrays, _but_ they have slower lookups.
+
+\#\# Doubly Linked Lists
+
+In a basic linked list, each item stores a single pointer to the next element.
+
+In a **doubly linked list**, items have pointers to the next _and the previous_ nodes.
+
+![](https://cdn-images-1.medium.com/max/800/0*OEAPr9oLUTWovm86)Doubly linked lists allow us to traverse our list _backwards_. In a _singly_ linked list, if you just had a pointer to a node in the _middle_ of a list, there would be _no way_ to know what nodes came before it. Not a problem in a doubly linked list.
+
+## Not cache-friendly
+
+Most computers have [caching systems that make reading from sequential addresses in memory faster than reading from scattered addresses](https://www.interviewcake.com/article/data-structures-coding-interview#ram).
+
+[Array](https://www.interviewcake.com/concept/array) items are always located right next to each other in computer memory, but linked list nodes can be scattered all over.
+
+So iterating through a linked list is usually quite a bit slower than iterating through the items in an array, even though they’re both theoretically time.
+
+## Hash tables
+
+Quick lookups are often really important. For that reason, we tend to use arrays \(-time lookups\) much more often than linked lists \(-time lookups\).
+
+For example, suppose we wanted to count how many times each ASCII character appears in [Romeo and Juliet](https://raw.githubusercontent.com/GITenberg/The-Tragedy-of-Romeo-and-Juliet_1112/master/1112.txt). How would we store those counts?
+
+We can use arrays in a clever way here. Remember — characters are just numbers. In ASCII \(a common character encoding\) ‘A’ is 65, ‘B’ is 66, etc.
+
+So we can use the character\(‘s number value\) as the _index_ in our array, and store the _count_ for that character _at that index_ in the array:
+
+![](https://cdn-images-1.medium.com/max/800/0*84jW_RfhW2MNqLGl)With this array, we can look up \(and edit\) the count for any character in constant time. Because we can access any index in our array in constant time.
+
+Something interesting is happening here — this array isn’t just a list of values. This array is storing _two_ things: characters and counts. The characters are _implied_ by the indices.
+
+**So we can think of an array as a** _**table**_ **with** _**two columns**_**…except you don’t really get to pick the values in one column \(the indices\) — they’re always 0, 1, 2, 3, etc.**
+
+But what if we wanted to put _any_ value in that column and still get quick lookups?
+
+Suppose we wanted to count the number of times each _word_ appears in Romeo and Juliet. Can we adapt our array?
+
+Translating a _character_ into an array index was easy. But we’ll have to do something more clever to translate a _word_ \(a string\) into an array index…
+
+![](https://cdn-images-1.medium.com/max/800/0*YuLIJSmkIcaveoBk)Here’s one way we could do it:
+
+Grab the number value for each character and add those up.
+
+![](https://cdn-images-1.medium.com/max/800/0*viH0fNvJKep80ecH)The result is 429. But what if we only have _30_ slots in our array? We’ll use a common trick for forcing a number into a specific range: the modulus operator \(%\). Modding our sum by 30 ensures we get a whole number that’s less than 30 \(and at least 0\):
+
+429 \: \% \: 30 = 9
+
+Bam. That’ll get us from a word \(or any string\) to an array index.
+
+This data structure is called a **hash table** or **hash map**. In our hash table, the _counts_ are the **values** and the _words_ \(“lies, “ etc.\) are the **keys** \(analogous to the _indices_ in an array\). The process we used to translate a key into an array index is called a **hashing function**.
+
+!\[A blank array except for a 20, labeled as the value, stored at index
+
+1. To the left the array is the word “lies,” labeled as the key, with an
+
+arrow pointing to the right at diamond with a question mark in the middle, labeled as the hashing function. The diamond points to the 9th index of the array.\]\([https://www.interviewcake.com/images/svgs/cs\_for\_hackers\_\_hash\_tables\_lies\_key\_labeled.svg?bust=209](https://www.interviewcake.com/images/svgs/cs_for_hackers__hash_tables_lies_key_labeled.svg?bust=209)\)
+
+The hashing functions used in modern systems get pretty complicated — the one we used here is a simplified example.
+
+Note that our quick lookups are only in one direction — we can quickly get the value for a given key, but the only way to get the key for a given value is to walk through all the values and keys.
+
+Same thing with arrays — we can quickly look up the value at a given index, but the only way to figure out the index for a given value is to walk through the whole array.
+
+One problem — what if two keys hash to the same index in our array? Look at “lies” and “foes”:
+
+![](https://cdn-images-1.medium.com/max/800/0*FEGUBbShygDT_Xmp)They both sum up to 429! So of course they’ll have the same answer when we mod by 30:
+
+429 \: \% \: 30 = 9
+
+So our hashing function gives us the same answer for “lies” and “foes.” This is called a **hash collision**. There are a few different strategies for dealing with them.
+
+Here’s a common one: instead of storing the actual values in our array, let’s have each array slot hold a _pointer_ to a _linked list_ holding the counts for all the words that hash to that index:
+
+![](https://cdn-images-1.medium.com/max/800/0*FJ_oFYwm3xi5gvS6)One problem — how do we know which count is for “lies” and which is for “foes”? To fix this, we’ll store the _word_ as well as the count in each linked list node:
+
+![](https://cdn-images-1.medium.com/max/800/0*zUqqK4NJil6nCjlK)“But wait!” you may be thinking, “Now lookups in our hash table take time in the worst case, since we have to walk down a linked list.” That’s true! You could even say that in the worst case _every_ key creates a hash collision, so our whole hash table _degrades to a linked list_.
+
+In industry though, we usually wave our hands and say **collisions are rare enough that on** _**average**_ **lookups in a hash table are time**. And there are fancy algorithms that keep the number of collisions low and keep the lengths of our linked lists nice and short.
+
+But that’s sort of the tradeoff with hash tables. You get fast lookups by key…except _some_ lookups could be slow. And of course, you only get those fast lookups in one direction — looking up the _key_ for a given _value_ still takes time
+
+## Breadth-First Search \(BFS\) and Breadth-First Traversal
+
+**Breadth-first search** \(BFS\) is a method for exploring a tree or graph. In a BFS, you first explore all the nodes one step away, then all the nodes two steps away, etc.
+
+Breadth-first search is like throwing a stone in the center of a pond. The nodes you explore “ripple out” from the starting point.
+
+Here’s a how a BFS would traverse this tree, starting with the root:
+
+![](https://cdn-images-1.medium.com/max/800/0*m463vT-gl3X8F6AS)We’d visit all the immediate children \(all the nodes that’re one step away from our starting node\):
+
+![](https://cdn-images-1.medium.com/max/800/0*_un0xsKDp2pgNPoM)Then we’d move on to all _those_ nodes’ children \(all the nodes that’re _two steps_ away from our starting node\):
+
+![](https://cdn-images-1.medium.com/max/800/0*b6vBOLT_H0Bpf2v4)And so on:
+
+![](https://cdn-images-1.medium.com/max/800/0*CtPtZ_RChr2hrfH8)Until we reach the end.
+
+Breadth-first search is often compared with **depth-first search**.
+
+Advantages:
+
+* A BFS will find the **shortest path** between the starting point and
+
+any other reachable node. A depth-first search will not necessarily find the shortest path.
+
+Disadvantages
+
+* A BFS on a binary tree _generally_ requires more memory than a DFS.
+
+![](https://cdn-images-1.medium.com/max/800/0*1ptw-98Yjj1scRX6)\#\#\# Binary Search Tree
+
+A **binary tree** is a **tree** where &lt;==\(_**every node has two or fewer children**_\)==&gt;.  
+The children are usually called _**left**_ and _**right**_.
+
+class BinaryTreeNode\(object\):
+
+This lets us build a structure like this:
+
+![](https://cdn-images-1.medium.com/max/800/0*jrVPHH5A60cni3qY)That particular example is special because every level of the tree is completely full. There are no “gaps.” We call this kind of tree “**perfect**.”
+
+Binary trees have a few interesting properties when they’re perfect:
+
+**Property 1: the number of total nodes on each “level” doubles as we move down the tree.**
+
+![](https://cdn-images-1.medium.com/max/800/0*r1nTqbN_TJyaaT4L)**Property 2: the number of nodes on the last level is equal to the sum of the number of nodes on all other levels \(plus 1\).** In other words, about _half_ of our nodes are on the last level.
+
+&lt;==\(_\_Let’s call the number of nodes n, \*\*\)==&gt;
+
+&lt;==\(**\_**and the height of the tree h. **\_**\)==&gt;
+
+**h can also be thought of as the “number of levels.”**
+
+If we had h, how could we calculate n?
+
+Let’s just add up the number of nodes on each level!
+
+If we zero-index the levels, the number of nodes on the xth level is exactly 2^x.
+
+1. Level 0: 2⁰ nodes,
+2. 2. Level 1: 2¹ nodes,
+3. 3. Level 2: 2² nodes,
+4. 4. Level 3: 2³ nodes,
+5. 5. _etc_
+
+So our total number of nodes is:
+
+**n = 2⁰ + 2¹ + 2² + 2³ + … + 2^{h-1}**
+
+Why only up to 2^{h-1}?
+
+Notice that we **started counting our levels at 0.**
+
+* So if we have h levels in total,
+* the last level is actually the “h-1”-th level.
+* That means the number of nodes on the last level is 2^{h-1}.
+
+But we can simplify.
+
+**Property 2 tells us that the number of nodes on the last level is \(1 more than\) half of the total number of nodes**,
+
+**so we can just take the number of nodes on the last level, multiply it by 2, and subtract 1 to get the number of nodes overall**.
+
+* We know the number of nodes on the last level is 2^{h-1},
+* So:
+
+**n = 2^{h-1} \* 2–1  
+n = 2^{h-1} \* 2¹ — 1  
+n = 2^{h-1+1}- 1  
+n = 2^{h} — 1**
+
+So that’s how we can go from h to n. What about the other direction?
+
+We need to bring the h down from the exponent.
+
+That’s what logs are for!
+
+First, some quick review.
+
+&lt;==\(log\_{10} \(100\) \)==&gt;
+
+simply means,
+
+**“What power must you raise 10 to in order to get 100?”**.
+
+Which is 2,
+
+because .
+
+&lt;==\(10² = 100 \)==&gt;
+
+## Graph Data Structure: Directed, Acyclic, etc
+
+Graph =====
+
+## Binary numbers
+
+Let’s put those bits to use. Let’s store some stuff. Starting with numbers.
+
+The number system we usually use \(the one you probably learned in elementary school\) is called **base 10**, because each digit has _ten_ possible values \(1, 2, 3, 4, 5, 6, 7, 8, 9, and 0\).
+
+But computers don’t have digits with ten possible values. They have _bits_ with _two_ possible values. So they use **base 2** numbers.
+
+Base 10 is also called **decimal**. Base 2 is also called **binary**.
+
+To understand binary, let’s take a closer look at how decimal numbers work. Take the number “101” in decimal:
+
+![](https://cdn-images-1.medium.com/max/800/0*SeL92lcm_RTuG-32)Notice we have two “1”s here, but they don’t _mean_ the same thing. The leftmost “1” _means_ 100, and the rightmost “1” _means_ 1. That’s because the leftmost “1” is in the hundreds place, while the rightmost “1” is in the ones place. And the “0” between them is in the tens place.
+
+![](https://cdn-images-1.medium.com/max/800/0*5kyLwItFLJiwsDRY)**So this “101” in base 10 is telling us we have “1 hundred, 0 tens, and 1 one.”**
+
+![](https://cdn-images-1.medium.com/max/800/0*BHTYqymE77CnzKpP)Notice how the _places_ in base 10 \(ones place, tens place, hundreds place, etc.\) are _sequential powers of 10_:
+
+* 10⁰=1 \* 10¹=10 \* 10²=100 \* 10³=1000 \* etc.
+
+**The places in** _**binary**_ **\(base 2\) are sequential powers of** _**2**_**:**
+
+* 2⁰=1 \* 2¹=2 \* 2²=4 \* 2³=8 \* etc.
+
+So let’s take that same “101” but this time let’s read it as a _binary_ number:
+
+![](https://cdn-images-1.medium.com/max/800/0*pKEnJ9JCGcMapiG4)Reading this from right to left: we have a 1 in the ones place, a 0 in the twos place, and a 1 in the fours place. So our total is 4 + 0 + 1 which is 5.
+
+![](https://cdn-images-1.medium.com/max/800/0*bCIyxai2cNhILyxr)\#\#\# Discover More:
+
+[**Web-Dev-Hub**  
+ _Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…_bgoonz-blog.netlify.app](https://bgoonz-blog.netlify.app/)
+
+By [Bryan Guner](https://medium.com/@bryanguner) on [June 4, 2021](https://medium.com/p/660256c2e4e3).
+
+[Canonical link](https://medium.com/@bryanguner/data-structures-under-the-hood-660256c2e4e3)
 
 Exported from [Medium](https://medium.com) on August 6, 2021.
 
